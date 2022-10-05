@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>formulario</title>
+</head>
+
+<body>
+    <div>
+        <img class="pais" src="./img/pais.jpeg">
+    </div>
+
+    <section class="title">
+        <div>
+            <div class="camp"> <img src="./img/hotelia campana.svg">
+                <h1>otelia</h1>
+            </div>
+            <div class="text">
+                <center>
+                    <h1>Eres más que</h1>
+                    <h1>Bienvenido</h1>
+                </center>
+            </div>
+        </div>
+
+    </section>
+    
+    <form class="pregun" action="">
+        <div class="preguntados">
+
+            
+            <form action="/action_page.php">
+                <label class="negrodos" for="emails">Tipo documentación</label>
+                <input type="text" multiple name="emails" id="texto" list="drawfemails" required size="64">
+                <datalist id="drawfemails">
+                    <option>CC</option>
+                    <option>TI</option>
+                </datalist>
+                Nombres
+                <input type="text" name="firstname">
+                Fecha de nacimiento
+                <input type="date" name="birthday">
+                Email
+                <input type="email" name="correo">
+
+                <label class="negro" for="pais">País de origen</label>
+                <input type="text" multiple name="pais" id="texto" list="pais" required size="64">
+                <datalist id="pais">
+                    <option>Afganistán</option>
+                    <option>Albania</option>
+                    <option>Alemania</option>
+                    <option>Andorra</option>
+                    <option>Angola</option>
+                    <option>Antigua y Barbuda</option>
+                    <option>Arabia Saudita</option>
+                    <option>Argelia</option>
+                    <option>Benín</option>
+                    <option>Bolivia</option>
+                    <option>Brasil</option>
+                    <option>Bulgaria</option>
+                    <option>Camerún</option>
+                    <option>Canadá</option>
+                    <option>Colombia</option>
+                    <option>Emiratos Árabes Unidos</option>
+                </datalist>
+                Contraseña:
+                <input type="password" name="password">
+            </form>
+        </div>
+        
+        <div class="preguntres">
+            
+            <center><h1 class="registro">Registrate</h1></center>
+            <form class="preguntres" action="/action_page.php">
+                Número documento
+                <input type="number" name="quantity">
+                Apellidos
+                <input type="text" name="firstname">
+                Género
+                <input type="radio" name="gender" value="male" checked>
+                Telefono de contacto
+                <input type="number" name="quantity">
+                
+                
+                Foto: <input type="file" name="myFile" placeholder="Seleccionar archivo">
+
+                Confirmar Contraseña:
+                <input type="password" name="password">
+                
+                
+
+            </form>
+            
+            <center><p><a href="#" class="link">Acepto terminos y condiciones.</a></p></center>
+            <button class="ter" type="menu">Ingresar</button>
+        </div>
+       
+    </form>
+
+</body>
+
+</html>
